@@ -1,0 +1,17 @@
+.donations-class {
+  background-color: purple;
+  color: white;
+  border: 1px solid ;
+  padding: 5px;
+  transition: .7s;
+  font-family: 'Product Sans'
+}
+.donations-class:hover {
+  cursor: pointer;
+  background-color: rebeccapurple;
+  transition: .7s;
+}
+
+.donations-class:focus {
+  outline: none;
+}
