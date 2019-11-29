@@ -6,7 +6,7 @@
 .yes-button {
   background-color: peachpuff;
   border: black solid 1px;
-  width: 2%;
+  width: 5%;
   font-family: "Product Sans";
   text-transform: capitalize;
   transition: .7s;
@@ -14,7 +14,7 @@
 .no-button {
   background-color: peachpuff;
   border: black solid 1px;
-  width: 2%;
+  width: 5%;
   transition: .7s;
   font-family: "Product Sans";
   text-transform: capitalize;
