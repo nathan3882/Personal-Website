@@ -1,5 +1,4 @@
 import {Component, OnInit} from '@angular/core';
-import {ActivatedRoute} from '@angular/router';
 import {LocationService} from '../../services/location.service';
 
 @Component({
@@ -25,14 +24,14 @@ export class HomePageComponent implements OnInit {
   }
 
   private didComeFromSomewhereElse() {
-    return this.locationService.fromProject() !== "";
+    return this.locationService.fromProject() !== '';
   }
 
   getHopedYouLiked(): string {
-    return "Did you like " + this.locationService.fromProject() + "?";
+    return 'Did you like ' + this.locationService.fromProject() + '?';
   }
 
   getHomeHopedYouLike() {
-    return "Like the site - Leave a like..."
+    return 'Like the site - Leave a like...';
   }
 }

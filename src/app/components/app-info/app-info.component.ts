@@ -9,7 +9,8 @@ import {VersionService} from '../../services/version.service';
 @Injectable()
 export class AppInfoComponent implements OnInit {
 
-  constructor(private versionService: VersionService) { }
+  constructor(private versionService: VersionService) {
+  }
 
   ngOnInit() {
   }

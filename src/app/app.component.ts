@@ -1,5 +1,4 @@
 import {Component, Injectable} from '@angular/core';
-import {CookieService} from 'ngx-cookie-service';
 import {ActivatedRoute, Router} from '@angular/router';
 import {LocationService} from './services/location.service';
 

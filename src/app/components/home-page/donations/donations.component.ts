@@ -1,4 +1,4 @@
-import {Component, Inject, Injectable, OnInit} from '@angular/core';
+import {Component, Inject, OnInit} from '@angular/core';
 import {DOCUMENT} from '@angular/common';
 
 @Component({
@@ -8,13 +8,14 @@ import {DOCUMENT} from '@angular/common';
 })
 export class DonationsComponent implements OnInit {
 
-  constructor(@Inject(DOCUMENT) private document: Document) { }
+  constructor(@Inject(DOCUMENT) private document: Document) {
+  }
 
   ngOnInit() {
   }
 
   navigateToMonzoMe() {
-      this.document.location.href = 'https://monzo.me/nathanallanson';
+    this.document.location.href = 'https://monzo.me/nathanallanson';
   }
 
 }

@@ -3,6 +3,7 @@
   bottom: 2.5%;
   right: 1.5%;
 }
+
 .heading-subheading {
   text-align: center;
   margin: 0 auto;
@@ -10,15 +11,19 @@
   text-transform: uppercase;
   text-space: 5px;
 }
+
 .header-welcome-class {
   margin-bottom: 5px;
 }
+
 .header-welcome-class {
   letter-spacing: 7px;
 }
+
 .header-welcome-text {
   margin-bottom: 2px;
 }
+
 .sub-heading-text {
   margin-bottom: 5px;
   margin-top: 5px;
@@ -37,9 +42,11 @@
   color: #191919;
   top: 50%;
 }
+
 .mainInfo {
   padding-top: 1%;
 }
+
 .belowWelcomeClass p {
   font-size: 15px;
   letter-spacing: 1px;

@@ -19,7 +19,8 @@ export class DidYouLikeComponent implements OnInit {
 
   ngOnInit() {
   }
-  shootConfetti(x:number, y:number):void {
+
+  shootConfetti(x: number, y: number): void {
     confetti({
       particleCount: 15,
       startVelocity: 15,
@@ -41,6 +42,7 @@ export class DidYouLikeComponent implements OnInit {
   onClickNo() {
     this.takeLike();
   }
+
   getWidth() {
     return Math.max(
       document.body.scrollWidth,

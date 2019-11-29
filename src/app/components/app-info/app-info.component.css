@@ -2,5 +2,7 @@
   position: fixed;
   bottom: 1%;
   left: 2%;
-  color: gray;
+  color: rebeccapurple;
+  border: black solid 1px;
+  padding: 3px;
 }
