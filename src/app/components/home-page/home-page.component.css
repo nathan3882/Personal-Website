@@ -1,5 +1,29 @@
 .donations {
   position: fixed;
   bottom: 2.5%;
-  right: 2%;
+  right: 1.5%;
+}
+.heading-subheading {
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 5%;
+  text-transform: uppercase;
+  text-space: 5px;
+}
+.header-welcome-class {
+  margin-bottom: 5px;
+}
+.header-welcome-class {
+  letter-spacing: 7px;
+}
+.header-welcome-text {
+  margin-bottom: 2px;
+}
+.sub-heading-text {
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+.dooDar {
+  vertical-align: top;
 }

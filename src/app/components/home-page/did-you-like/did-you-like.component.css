@@ -1,0 +1,39 @@
+.both-buttons {
+  display: flex;
+  justify-content: center;
+
+}
+.yes-button {
+  background-color: peachpuff;
+  border: black solid 1px;
+  width: 2%;
+  font-family: "Product Sans";
+  text-transform: capitalize;
+  transition: .7s;
+}
+.no-button {
+  background-color: peachpuff;
+  border: black solid 1px;
+  width: 2%;
+  transition: .7s;
+  font-family: "Product Sans";
+  text-transform: capitalize;
+}
+.yes-button:hover {
+  cursor: pointer;
+  background-color: lawngreen;
+  transition: .7s;
+}
+
+.yes-button:focus {
+  outline: none;
+}
+
+.no-button:hover {
+  cursor: pointer;
+  transition: .7s;
+  background-color: darkred;
+}
+.no-button:focus {
+  outline: none;
+}

@@ -1,2 +1,11 @@
-<p>home-page works!</p>
+<div class="heading-subheading">
+  <div class="header-welcome-class">
+    <h1 class="header-welcome-text">{{getWelcomeText()}}</h1>
+  </div>
+  <div *ngIf=this.didComeFromSomewhereElse() class="sub-heading-class">
+    <h2 class="sub-heading-text">{{getHopedYouLiked()}}</h2>
+    <app-did-you-like class="dooDar" ></app-did-you-like>
+  </div>
+</div>
+
 <app-donations class="donations"></app-donations>
