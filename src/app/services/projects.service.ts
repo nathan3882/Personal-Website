@@ -35,8 +35,9 @@ export class ProjectsService {
 
   public ttrainparse: PersonalProject;
   public spotipoint: PersonalProject;
+  public activeProject: PersonalProject;
 
-  constructor(private locationService: LocationService) {
+  constructor(public projectService: ProjectsService, private locationService: LocationService) {
     this.ttrainparse = new PersonalProject().setPath('ttrainparse').setDisplayName('TTrainParse').setGithubLink('TTrainParse');
     this.spotipoint = new PersonalProject().setPath('spotipoint').setDisplayName('Spotipoint').setGithubLink('Spotipoint');
   }
@@ -44,9 +45,9 @@ export class ProjectsService {
   ngOnInit() {
   }
 
-  handleClick(projectName: PersonalProject): void {
-    this.locationService.redirectToProject(projectName.path).then(result => {
-      alert("le = " + result);
+  handleClick(project: PersonalProject): void {
+    this.locationService.redirectToProject(project.path).then(result => {
+      this.projectService.activeProject = project;
     });
   }
 }
