@@ -31,4 +31,8 @@ export class HomePageComponent implements OnInit {
   getHopedYouLiked(): string {
     return "Did you like " + this.locationService.fromProject() + "?";
   }
+
+  getHomeHopedYouLike() {
+    return "Like the site - Leave a like..."
+  }
 }

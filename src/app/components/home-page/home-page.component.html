@@ -6,13 +6,21 @@
     <h2 class="sub-heading-text">{{getHopedYouLiked()}}</h2>
     <app-did-you-like class="dooDar" ></app-did-you-like>
   </div>
+  <div *ngIf=!this.didComeFromSomewhereElse() class="sub-heading-class">
+    <h2 class="sub-heading-text">{{getHomeHopedYouLike()}}</h2>
+    <app-did-you-like class="dooDar" ></app-did-you-like>
+  </div>
   <div class="belowWelcomeClass">
     <p class="mainInfo">
     I'm 18 years old - as of 2019 - I've been working with Java for 6 years, node.js a year and a half & Python from 2015-2017.<br><br>
 
     View some of my apps below to see what I can do :)<br><br>
-    If you'd like - go straight to my <a href="https://www.github.com/nathan3882">GitHub</a>.
+    If you'd like - view my <a href="https://www.github.com/nathan3882">GitHub</a>.
     </p>
+  </div>
+
+  <div class="project-buttons">
+    <app-project-buttons></app-project-buttons>
   </div>
 </div>
 

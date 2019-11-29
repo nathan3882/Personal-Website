@@ -33,8 +33,7 @@ export class DidYouLikeComponent implements OnInit {
   }
 
 
-  onClickYes($event: MouseEvent) {
-    let currentCookieValue: number = this.getLikes();
+  onClickYes() {
     this.addLike();
     this.shootConfetti(.4923, .25);
   }
