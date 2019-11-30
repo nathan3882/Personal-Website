@@ -1,0 +1,16 @@
+.all-buttons {
+  background-color: darkcyan;
+  margin-bottom: 30px;
+  padding-left: 24px;
+  color: white;
+  padding-right: 24px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  transition: 1.5s all;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 10px;
+
+  cursor: pointer;
+}

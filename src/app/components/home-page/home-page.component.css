@@ -4,52 +4,35 @@
   right: 1.5%;
 }
 
-.heading-subheading {
+.headings {
+  padding-top: 10%;
   text-align: center;
   margin: 0 auto;
-  padding-top: 5%;
   text-transform: uppercase;
   text-space: 5px;
 }
 
-.header-welcome-class {
-  margin-bottom: 5px;
-}
-
-.header-welcome-class {
-  letter-spacing: 7px;
-}
-
 .header-welcome-text {
+  letter-spacing: 7px;
   margin-bottom: 2px;
 }
 
-.sub-heading-text {
+.header-subheading-text {
   margin-bottom: 5px;
   margin-top: 5px;
+  font-size: 20px;
 }
 
-.dooDar {
-  vertical-align: top;
+.belowWelcomeClass {
+  text-align: center;
 }
-
 .belowWelcomeClass p {
-  justify-items: center;
   display: inline-block;
-  font-family: 'Cabin', sans-serif;
-  max-width: 27%;
-  width: 100%;
-  color: #191919;
-  top: 50%;
-}
-
-.mainInfo {
-  padding-top: 1%;
-}
-
-.belowWelcomeClass p {
   font-size: 15px;
   letter-spacing: 1px;
-  text-transform: none;
+  font-family: 'Cabin', sans-serif;
+  max-width: 27%;
+  color: #191919;
+  padding-top: 1%;
   margin-bottom: 65px;
 }

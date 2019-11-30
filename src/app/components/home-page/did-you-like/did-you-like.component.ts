@@ -35,7 +35,7 @@ export class DidYouLikeComponent implements OnInit {
 
   onClickYes() {
     this.addLike();
-    this.shootConfetti(.4923, .25);
+    this.shootConfetti(.5, .25);
   }
 
   onClickNo() {

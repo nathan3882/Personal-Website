@@ -32,6 +32,6 @@ export class HomePageComponent implements OnInit {
   }
 
   getHomeHopedYouLike() {
-    return 'Like the site - Leave a like...';
+    return 'Like the site? leave a like...';
   }
 }
