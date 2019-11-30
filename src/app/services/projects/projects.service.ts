@@ -1,32 +1,6 @@
 import {Injectable} from '@angular/core';
-import {LocationService} from './location.service';
-
-
-class PersonalProject {
-
-  displayName: string;
-  githubLink: string;
-  path: string;
-
-  constructor() {
-  }
-
-  public setDisplayName(displayName: string): PersonalProject {
-    this.displayName = displayName;
-    return this;
-  }
-
-  public setPath(path: string): PersonalProject {
-    this.path = path;
-    return this;
-  }
-
-  public setGithubLink(githubLink: string): PersonalProject {
-    this.githubLink = githubLink;
-    return this;
-  }
-
-}
+import {LocationService} from '../location/location.service';
+import {PersonalProject} from "../../models/PersonalProject";
 
 @Injectable({
   providedIn: 'root'

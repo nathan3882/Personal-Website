@@ -1,5 +1,5 @@
 import {Component, Injectable, OnInit} from '@angular/core';
-import {LocationService} from '../../services/location.service';
+import {LocationService} from '../../services/location/location.service';
 
 @Component({
   selector: 'app-project',

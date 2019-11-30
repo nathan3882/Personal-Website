@@ -1,7 +1,7 @@
 import {Component, Injectable, OnInit} from '@angular/core';
-import {DidYouLikeService} from '../../../services/did-you-like.service';
+import {DidYouLikeService} from '../../../services/did-you-like/did-you-like.service';
 import {CookieService} from 'ngx-cookie-service';
-import {LocationService} from '../../../services/location.service';
+import {LocationService} from '../../../services/location/location.service';
 
 import confetti from 'canvas-confetti';
 
@@ -33,7 +33,6 @@ export class DidYouLikeComponent implements OnInit {
     });
   }
 
-
   onClickYes() {
     this.addLike();
     this.shootConfetti(.4923, .25);
@@ -42,27 +41,6 @@ export class DidYouLikeComponent implements OnInit {
   onClickNo() {
     this.takeLike();
   }
-
-  getWidth() {
-    return Math.max(
-      document.body.scrollWidth,
-      document.documentElement.scrollWidth,
-      document.body.offsetWidth,
-      document.documentElement.offsetWidth,
-      document.documentElement.clientWidth
-    );
-  }
-
-  getHeight() {
-    return Math.max(
-      document.body.scrollHeight,
-      document.documentElement.scrollHeight,
-      document.body.offsetHeight,
-      document.documentElement.offsetHeight,
-      document.documentElement.clientHeight
-    );
-  }
-
 
   private addLike() {
     this.cookieService.set(this.getLikesCookieName(), String(this.getLikes() + 1));

@@ -1,5 +1,5 @@
 import {Component, Injectable, OnInit} from '@angular/core';
-import {VersionService} from '../../services/version.service';
+import {VersionService} from '../../services/version/version.service';
 
 @Component({
   selector: 'app-app-info',

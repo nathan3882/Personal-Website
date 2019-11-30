@@ -1,5 +1,5 @@
 import {Component, Injectable, OnInit} from '@angular/core';
-import {ProjectsService} from '../../../services/projects.service';
+import {ProjectsService} from '../../../services/projects/projects.service';
 
 @Component({
   selector: 'app-project-buttons',

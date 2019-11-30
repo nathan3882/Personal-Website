@@ -1,4 +1,5 @@
 import {Injectable} from '@angular/core';
+import {PersonalProject} from "../../models/PersonalProject";
 
 @Injectable({
   providedIn: 'root'

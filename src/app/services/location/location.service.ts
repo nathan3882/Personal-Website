@@ -12,6 +12,7 @@ export class LocationService {
   router: Router;
 
   constructor() {
+    console.log('Loc Service');
   }
 
   public fromProject(): string {
