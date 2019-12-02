@@ -17,6 +17,7 @@ export class ProjectsService {
   public activeProject: PersonalProject;
   public androidTtrainParse: PersonalProject;
   public howFast: PersonalProject;
+  public bigBookRevision: PersonalProject;
 
   constructor(private activatedRoute: Router, private router: Router, private locationService: LocationService) {
     console.log("init ProjectsService - ");
@@ -59,6 +60,13 @@ export class ProjectsService {
       .setPath('androidttrainparse')
       .setGithubLink('https://github.com/nathan3882/AndroidTTParse')
       .setTagline("This is an thin android application written that displays information done by the thick computation in TTrainParse's desktop client.");
+
+    this.bigBookRevision = new PersonalProject()
+      .setButtonName('Big Book Revision')
+      .setDisplayName('Big Book Revision for Desktop')
+      .setPath('bigbookrevision')
+      .setGithubLink('https://github.com/nathan3882/BigBookRevision')
+      .setTagline("This program makes creation and maintenance of mass amounts of student note files easy");
 
     this.howFast = new PersonalProject()
       .setButtonName('Android HowFast')

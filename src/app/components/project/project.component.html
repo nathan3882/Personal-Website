@@ -16,6 +16,14 @@
       Support will be coming soon for changing the colour of their Philips Hue lights - for example, when the bass
       drops... the lights change, or flicker, depending on your configuration.
     </p>
+
+    <p *ngSwitchCase="projectsService.NBIdealTrains.displayName">
+      Ideal Trains, developed in the NetBeans IDE (NB) is a SOAP web service client that consumes the South Western Railway public endpoints to fetch optimal trains a user could catch in order to depart from station 'A' and arrive at station 'B' at 'C' time with 'D' minutes to spare until time 'E'.<br><br>
+      It gives people the ability to develop programs which allow users to schedule their journeys according to walk speeds, disabilities or whether they just like a nice coffee in the morning...<br><br>
+      I utilised this ws consumption to display when a user needs to catch a train in order to get to their lesson on time, with sufficient walking time to get from the station to the actual class room.<br><br>
+      Full documentation can be viewed on my GitHub page.
+    </p>
+
     <p *ngSwitchCase="projectsService.ttrainparse.displayName">
       TTrainParse has a wide ecosystem of projects (except apple...): For example, it has an Android application, a
       Desktop Application along with an Angular application (soon)<br><br>
@@ -24,6 +32,16 @@
       Optical Character Recognition (OCR) recruitment.<br><br>
       User configurablity, set a 'home' station in order to support staying in different places etc, set how long it
       takes you to get from the station to the college (disabilities etc)
+    </p>
+
+    <p *ngSwitchCase="projectsService.bigBookRevision.displayName">
+      This project solves an issue of having to write chronological & in order notes on very large text books.<br><br>
+      When studying for A Levels, I had Business book that was 300+ pages long + I had to write notes on all of it... so I wrote this program<br><br>
+      BigBookRevision makes separate documents in segmented intervals + supports future modification of these documents  + their names<br><br>
+      For example, a 737 page book that you want to write notes on. Each new file generated could consist of X pages, but in this case I shall say 50 (can be different)<br>
+      15 new files will be generated 0-50, 51-100, 101-150, 151-200..... 651-700, 701-737.<br><Br>
+      The user will of course have the ability to amend the upper bound of a file (ie 0-50) to "0-125", "51-100" will change to 126-127" and "101-150" will change to 128-129" etcetera. So the user doesn't have to go in and change potentially 15 different file names
+
     </p>
     <!--default case when there are no matches -->
     <p *ngSwitchDefault>A random error occured that meant we could't describe this project to you... :(</p>
