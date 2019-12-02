@@ -1,21 +1,23 @@
-import {Component, Inject, OnInit} from '@angular/core';
+import {Component, Inject, Injectable, OnInit} from '@angular/core';
 import {DOCUMENT} from '@angular/common';
+import {LocationService} from "../../../services/location/location.service";
 
 @Component({
   selector: 'app-donations',
   templateUrl: './donations.component.html',
   styleUrls: ['./donations.component.css']
 })
+@Injectable()
 export class DonationsComponent implements OnInit {
 
-  constructor(@Inject(DOCUMENT) private document: Document) {
+  constructor(private locationService: LocationService) {
   }
 
   ngOnInit() {
   }
 
   navigateToMonzoMe() {
-    this.document.location.href = 'https://monzo.me/nathanallanson';
+    this.locationService.redirectToLink("https://monzo.me/nathanallanson", true);
   }
 
 }

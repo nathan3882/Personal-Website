@@ -23,6 +23,6 @@ export class ProjectComponent implements OnInit {
   }
 
   getDisplayNameStyle() {
-    return {'color': 'mediumpurple', 'cursor': 'pointer'};
+    return {'color': 'mediumpurple', 'cursor': 'pointer', 'text-decoration': 'underline'};
   }
 }

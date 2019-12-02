@@ -4,9 +4,15 @@
   display: block;
 }
 .welcome-to {
+  margin-bottom: 2px;
 }
 .welcome-to:hover {
 }
 .tag-line {
   font-size: 20px;
+  margin-top: 1px;
+}
+.link-helper {
+  margin-top: 1px;
+
 }
