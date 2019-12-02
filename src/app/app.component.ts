@@ -18,6 +18,7 @@ export class AppComponent implements OnInit {
       });
     locationService.router = router;
   }
+
   ngOnInit() {
     console.log('App component');
   }

@@ -19,7 +19,7 @@ export class HomeButtonComponent implements OnInit {
     if (this.projectService.hasActiveProject()) {
       let fromThisProject = this.projectService.activeProject.displayName;
       this.router.navigate(['/'], {queryParams: {fromProject: fromThisProject}});
-    }else{
+    } else {
       this.router.navigate(['/']);
 
     }

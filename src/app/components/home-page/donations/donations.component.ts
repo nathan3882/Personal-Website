@@ -1,5 +1,4 @@
-import {Component, Inject, Injectable, OnInit} from '@angular/core';
-import {DOCUMENT} from '@angular/common';
+import {Component, Injectable, OnInit} from '@angular/core';
 import {LocationService} from "../../../services/location/location.service";
 
 @Component({

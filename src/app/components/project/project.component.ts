@@ -18,8 +18,6 @@ export class ProjectComponent implements OnInit {
 
   ngOnInit() {
     this.project = this.projectsService.activeProject;
-    console.log("init ProjectComponent - " + this.project.displayName);
-
   }
 
   getDisplayNameStyle() {

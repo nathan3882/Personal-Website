@@ -3,16 +3,29 @@
   text-align: center;
   display: block;
 }
+
 .welcome-to {
   margin-bottom: 2px;
 }
+
 .welcome-to:hover {
 }
+
 .tag-line {
   font-size: 20px;
-  margin-top: 1px;
+  justify-items: center;
+  margin: 0 auto;
+  display: block;
+  max-width: 50%;
 }
+
 .link-helper {
   margin-top: 1px;
 
+}
+
+.all-descriptions p {
+  max-width: 50%;
+  margin: 0 auto;
+  display: block;
 }

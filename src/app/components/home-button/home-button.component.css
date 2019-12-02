@@ -1,4 +1,19 @@
 .home-button {
   display: block;
   margin: 0 auto;
+  cursor: pointer;
+  background-color: mediumpurple;
+  border: 1px solid black;
+  color: white;
+  transition: .7s;
+  padding: 5px;
+  cursor: pointer;
+
+}
+
+.home-button:hover {
+  background-color: white;
+  border: 1px solid mediumpurple;
+  color: mediumpurple;
+  transition: .7s;
 }

@@ -1,23 +1,31 @@
 <div class="everything">
   <h1 class="welcome-to">Welcome to <span (click)="this.locationService.redirectToLink(this.project.githubLink, false)"
                                           [ngStyle]=getDisplayNameStyle()>{{this.project.displayName}}</span></h1>
-  <p class="link-helper">Click {{this.project.displayName}} above to view the GitHub page</p>
+  <p class="link-helper">Click '{{this.project.displayName}}' above to view the GitHub page</p>
   <p class="tag-line">{{this.project.tagLine}}</p>
+  <br>
   <label class="all-descriptions" [ngSwitch]="this.project.displayName">
 
-    <div *ngSwitchCase="projectsService.spotipoint.displayName">
-      <p>A few of Spotipoints best features are:<br><br>
-        The user can replay certain parts of songs; this could be the parts you like the most, or a part someone else in
-        the room hates *evil laugh*<br>As an example, make 1:05 - 2:10 play on repeat a configurable amount of
-        times.<br><br>
-        You can also stop listening skip parts of songs you dont like and dive in, straight to your more favourable
-        part/s<br>All you have to do is save a favourite part (ie 1:10) to skip to when the song starts, or finishes,
-        infact.<br><br>
-        Support will be coming soon for changing the colour of their Philips Hue lights - for example, when the bass
-        drops... the lights change, or flicker, depending on your configuration.
-      </p>
-    </div>
+    <p *ngSwitchCase="projectsService.spotipoint.displayName">A few of Spotipoints best features are:<br><br>
+      The user can replay certain parts of songs; this could be the parts you like the most, or a part someone else in
+      the room hates *evil laugh*<br>As an example, make 1:05 - 2:10 play on repeat a configurable amount of
+      times.<br><br>
+      You can also stop listening skip parts of songs you dont like and dive in, straight to your more favourable
+      part/s<br>All you have to do is save a favourite part (ie 1:10) to skip to when the song starts, or finishes,
+      infact.<br><br>
+      Support will be coming soon for changing the colour of their Philips Hue lights - for example, when the bass
+      drops... the lights change, or flicker, depending on your configuration.
+    </p>
+    <p *ngSwitchCase="projectsService.ttrainparse.displayName">
+      TTrainParse has a wide ecosystem of projects (except apple...): For example, it has an Android application, a
+      Desktop Application along with an Angular application (soon)<br><br>
+      It has it's own <a [href]='this.projectsService.NBIdealTrains.githubLink'>SOAP webservice consumption
+      library</a><br><br>
+      Optical Character Recognition (OCR) recruitment.<br><br>
+      User configurablity, set a 'home' station in order to support staying in different places etc, set how long it
+      takes you to get from the station to the college (disabilities etc)
+    </p>
     <!--default case when there are no matches -->
-    <p *ngSwitchDefault>not spotipint</p>
+    <p *ngSwitchDefault>A random error occured that meant we could't describe this project to you... :(</p>
   </label></div>
 <app-home-button></app-home-button>
