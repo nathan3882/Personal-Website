@@ -1,6 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {Router} from "@angular/router";
 import {ProjectsService} from "../../services/projects/projects.service";
+import {LocationService} from "../../services/location/location.service";
 
 @Component({
   selector: 'app-home-button',
@@ -9,19 +10,9 @@ import {ProjectsService} from "../../services/projects/projects.service";
 })
 export class HomeButtonComponent implements OnInit {
 
-  constructor(private router: Router, private projectService: ProjectsService) {
+  constructor(private projectsService: ProjectsService, private locationService: LocationService) {
   }
 
   ngOnInit() {
-  }
-
-  goHome() {
-    if (this.projectService.hasActiveProject()) {
-      let fromThisProject = this.projectService.activeProject.displayName;
-      this.router.navigate(['/'], {queryParams: {fromProject: fromThisProject}});
-    } else {
-      this.router.navigate(['/']);
-
-    }
   }
 }

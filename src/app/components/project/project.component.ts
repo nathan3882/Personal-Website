@@ -17,7 +17,12 @@ export class ProjectComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.project = this.projectsService.activeProject;
+    let fetchedProject = this.projectsService.activeProject;
+    if (fetchedProject === undefined) {
+      this.locationService.goHome(undefined);
+      return;
+    }
+    this.project = fetchedProject;
   }
 
   getDisplayNameStyle() {
