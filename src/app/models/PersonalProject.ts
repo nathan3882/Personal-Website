@@ -3,6 +3,7 @@ export class PersonalProject {
   displayName: string;
   githubLink: string;
   path: string;
+  tagLine: string;
 
   constructor() {
   }
@@ -14,6 +15,11 @@ export class PersonalProject {
 
   public setPath(path: string): PersonalProject {
     this.path = path;
+    return this;
+  }
+
+  public setTagline(tagLine: string): PersonalProject {
+    this.tagLine = tagLine;
     return this;
   }
 

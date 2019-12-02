@@ -10,6 +10,7 @@ import {DidYouLikeComponent} from './components/home-page/did-you-like/did-you-l
 import {CookieService} from 'ngx-cookie-service';
 import {ProjectButtonsComponent} from './components/home-page/project-buttons/project-buttons.component';
 import {ProjectComponent} from './components/project/project.component';
+import { HomeButtonComponent } from './components/home-button/home-button.component';
 
 const routes: Routes = [{path: '', component: HomePageComponent},
   {path: 'project/:projectName', component: ProjectComponent}];
@@ -22,7 +23,8 @@ const routes: Routes = [{path: '', component: HomePageComponent},
     DonationsComponent,
     DidYouLikeComponent,
     ProjectComponent,
-    ProjectButtonsComponent
+    ProjectButtonsComponent,
+    HomeButtonComponent
   ],
   imports: [
     BrowserModule,

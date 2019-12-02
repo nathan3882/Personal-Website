@@ -12,7 +12,6 @@ export class LocationService {
   router: Router;
 
   constructor() {
-    console.log('Loc Service');
   }
 
   public fromProject(): string {
@@ -25,6 +24,10 @@ export class LocationService {
 
   public redirectToProject(projectName: string): Promise<boolean> {
     return this.router.navigateByUrl('/project/' + projectName);
+  }
+
+  public redirectToLink(link: string, newTab: boolean): void {
+    window.open(link, "_blank");
   }
 
 }

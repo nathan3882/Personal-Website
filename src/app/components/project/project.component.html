@@ -1,1 +1,16 @@
-<p>{{this.project}}</p>
+<div class="everything">
+  <h1 class="welcome-to">Welcome to <span (click)="this.locationService.redirectToLink(this.project.githubLink, false)"[ngStyle]=getDisplayNameStyle()>{{this.project.displayName}}</span></h1>
+  <p class="tag-line">{{this.project.tagLine}}</p>
+  <label class="all-descriptions" [ngSwitch]="this.project.displayName">
+
+    <div *ngSwitchCase="projectsService.spotipoint.displayName">
+      <p>A few of Spotipoints best features are:<br><br>
+        The user can replay certain parts of songs; this could be the parts you like the most, or a part someone else in the room hates *evil laugh*<br>As an example, make 1:05 - 2:10 play on repeat a configurable amount of times.<br><br>
+        You can also stop listening skip parts of songs you dont like and dive in, straight to your more favourable part/s<br>All you have to do is save a favourite part (ie 1:10) to skip to when the song starts, or finishes, infact.<br><br>
+        Support will be coming soon for changing the colour of their Philips Hue lights - for example, when the bass drops... the lights change, or flicker, depending on your configuration.
+      </p>
+    </div>
+    <!--default case when there are no matches -->
+    <p *ngSwitchDefault>not spotipint</p>
+  </label></div>
+<app-home-button></app-home-button>

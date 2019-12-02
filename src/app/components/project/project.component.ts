@@ -1,5 +1,7 @@
 import {Component, Injectable, OnInit} from '@angular/core';
 import {LocationService} from '../../services/location/location.service';
+import {ProjectsService} from "../../services/projects/projects.service";
+import {PersonalProject} from "../../models/PersonalProject";
 
 @Component({
   selector: 'app-project',
@@ -9,13 +11,18 @@ import {LocationService} from '../../services/location/location.service';
 @Injectable()
 export class ProjectComponent implements OnInit {
 
-  project: string;
+  project: PersonalProject;
 
-  constructor(locationService: LocationService) {
-    this.project = locationService.fromProject();
+  constructor(private locationService: LocationService, private projectsService: ProjectsService) {
   }
 
   ngOnInit() {
+    this.project = this.projectsService.activeProject;
+    console.log("init ProjectComponent - " + this.project.displayName);
+
   }
 
+  getDisplayNameStyle() {
+    return {'color': 'mediumpurple', 'cursor': 'pointer'};
+  }
 }
