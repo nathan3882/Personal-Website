@@ -18,6 +18,7 @@ export class ProjectsService {
   public androidTtrainParse: PersonalProject;
   public howFast: PersonalProject;
   public bigBookRevision: PersonalProject;
+  public freelance: PersonalProject;
 
   constructor(private activatedRoute: Router, private router: Router, private locationService: LocationService) {
     console.log("init ProjectsService - ");
@@ -32,6 +33,14 @@ export class ProjectsService {
 
   private initialiseProjects() {
     console.log("init all my projects - ");
+
+    this.freelance = new PersonalProject()
+      .setButtonName('Freelance')
+      .setDisplayName("My freelance explanation")
+      .setGithubLink('https://github.com/nathan3882/TTrainParse')
+      .setPath('freelance')
+      .setTagline("This is a small explanation as to why there is no freelance projects visible on my site or my GitHub page.");
+
 
     this.ttrainparse = new PersonalProject()
       .setButtonName('TTrainParse')

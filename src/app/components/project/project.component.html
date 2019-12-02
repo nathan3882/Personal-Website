@@ -21,7 +21,7 @@
       Ideal Trains, developed in the NetBeans IDE (NB) is a SOAP web service client that consumes the South Western Railway public endpoints to fetch optimal trains a user could catch in order to depart from station 'A' and arrive at station 'B' at 'C' time with 'D' minutes to spare until time 'E'.<br><br>
       It gives people the ability to develop programs which allow users to schedule their journeys according to walk speeds, disabilities or whether they just like a nice coffee in the morning...<br><br>
       I utilised this ws consumption to display when a user needs to catch a train in order to get to their lesson on time, with sufficient walking time to get from the station to the actual class room.<br><br>
-      Full documentation can be viewed on my GitHub page.
+      Full documentation can be viewed <a href="https://github.com/nathan3882/NodeBackend#nodebackend">here</a>
     </p>
 
     <p *ngSwitchCase="projectsService.ttrainparse.displayName">
@@ -41,8 +41,20 @@
       For example, a 737 page book that you want to write notes on. Each new file generated could consist of X pages, but in this case I shall say 50 (can be different)<br>
       15 new files will be generated 0-50, 51-100, 101-150, 151-200..... 651-700, 701-737.<br><Br>
       The user will of course have the ability to amend the upper bound of a file (ie 0-50) to "0-125", "51-100" will change to 126-127" and "101-150" will change to 128-129" etcetera. So the user doesn't have to go in and change potentially 15 different file names
-
     </p>
+
+    <p *ngSwitchCase="projectsService.howFast.displayName">
+      With this project, you can also measure your average speed between two points, by pressing start tracking, and then stop tracking when you're down the road etc.<br><br>
+      The notifications are configurable - for example, when you reach 15 miles an hour, a notification will pop up - "You've surpassed 15mph".<br><br>
+      This is all configurable and you can choose to have your speed unit in MPH, KMPH, knots etcetera, it's up to the user.
+    </p>
+
+    <p *ngSwitchCase="projectsService.freelance.displayName">
+      All of my freelance projects are currently hidden from view. This is to protect the intellectual property owned by the client I performed the work for.<br><br>
+      A considerable amount of clients also require me to sign Non Disclosure Agreements to assure there was no publication of the ideas I was writing etcetera.<br><br>
+      This, sadly, leaves no freelance projects being eligible for public display on my website or GitHub; however, they could be available to see the code in person.
+    </p>
+
     <!--default case when there are no matches -->
     <p *ngSwitchDefault>A random error occured that meant we could't describe this project to you... :(</p>
   </label></div>
