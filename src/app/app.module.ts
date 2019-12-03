@@ -11,9 +11,13 @@ import {CookieService} from 'ngx-cookie-service';
 import {ProjectButtonsComponent} from './components/home-page/project-buttons/project-buttons.component';
 import {ProjectComponent} from './components/project/project.component';
 import {HomeButtonComponent} from './components/home-button/home-button.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatCardModule, MatMenuModule, MatTooltipModule} from '@angular/material';
 
-const routes: Routes = [{path: '', component: HomePageComponent},
-  {path: 'project/:projectName', component: ProjectComponent}];
+import 'hammerjs';
+const routes: Routes = [
+  {path: 'project/:projectName', component: ProjectComponent},
+  {path: '**', component: HomePageComponent}];
 
 @NgModule({
   declarations: [
@@ -27,8 +31,12 @@ const routes: Routes = [{path: '', component: HomePageComponent},
     HomeButtonComponent
   ],
   imports: [
+    BrowserAnimationsModule,
+    MatTooltipModule,
     BrowserModule,
-    RouterModule.forRoot(routes, {enableTracing: false})
+    RouterModule.forRoot(routes, {enableTracing: false}),
+    MatCardModule,
+    MatMenuModule,
   ],
   providers: [CookieService],
   bootstrap: [AppComponent]

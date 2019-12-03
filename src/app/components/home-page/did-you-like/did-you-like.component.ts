@@ -15,6 +15,7 @@ export class DidYouLikeComponent implements OnInit {
 
 
   constructor(public cookieService: CookieService, private locationService: LocationService, public didYouLikeService: DidYouLikeService) {
+
   }
 
   ngOnInit() {
