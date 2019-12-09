@@ -1,4 +1,4 @@
-.project-button {
+button {
   margin: 5px;
   text-decoration: none;
   cursor: pointer;
@@ -10,7 +10,7 @@
   margin-bottom: 15px;
 }
 
-.project-button:hover {
+button:hover {
   color: mediumpurple;
   transition: .7s all;
   border: 1px solid black;
