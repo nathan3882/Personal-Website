@@ -15,6 +15,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatCardModule, MatMenuModule, MatTooltipModule} from '@angular/material';
 
 import 'hammerjs';
+import { ProjectButtonComponent } from './components/home-page/project-buttons/project-button/project-button.component';
 const routes: Routes = [
   {path: 'project/:projectName', component: ProjectComponent},
   {path: '**', component: HomePageComponent}];
@@ -28,7 +29,8 @@ const routes: Routes = [
     DidYouLikeComponent,
     ProjectComponent,
     ProjectButtonsComponent,
-    HomeButtonComponent
+    HomeButtonComponent,
+    ProjectButtonComponent
   ],
   imports: [
     BrowserAnimationsModule,

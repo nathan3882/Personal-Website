@@ -15,9 +15,4 @@ export class ProjectButtonsComponent implements OnInit {
 
   ngOnInit() {
   }
-
-  // @ts-ignore
-  handleClick(projectName: PersonalProject) {
-    this.projectService.handleClick(projectName);
-  }
 }
