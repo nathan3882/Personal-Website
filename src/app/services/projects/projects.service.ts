@@ -111,13 +111,8 @@ export class ProjectsService {
   getByRouterName(currentProjectName: string): PersonalProject | undefined {
     let found: PersonalProject | undefined = undefined;
     for (let i = 0; i < this.allProjects.length; i++) {
-      let iterativeProject = this.allProjects[i];
-      let newDisplayName: String = iterativeProject.path;
-      console.log(newDisplayName + ' to ' + currentProjectName);
-
-      if (newDisplayName === currentProjectName) {
-        console.log(newDisplayName + ' === ' + currentProjectName);
-        return iterativeProject;
+      if (currentProjectName === this.allProjects[i].path) {
+        return this.allProjects[i];
       }
     }
     return found;
