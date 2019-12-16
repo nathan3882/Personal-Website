@@ -18,6 +18,8 @@ export class ProjectsService {
   public androidTtrainParse: PersonalProject;
   public howFast: PersonalProject;
   public bigBookRevision: PersonalProject;
+  public excelReporter: PersonalProject;
+  public bowlingParse: PersonalProject;
   public freelance: PersonalProject;
 
   public allProjects: PersonalProject[] = [];
@@ -34,6 +36,20 @@ export class ProjectsService {
 
   private initialiseProjects() {
     console.log('init all my projects - ');
+
+    this.excelReporter = new PersonalProject()
+      .setButtonName('Excel Reporter')
+      .setDisplayName('Excel Reporter')
+      .setGithubLink('https://github.com/nathan3882/ExcelReporter')
+      .setPath('excelreporter')
+      .setTagline('This is a project that can receive an Excel document and go ahead and extract the document\'s data into an aesthetic PDF format.');
+
+    this.bowlingParse = new PersonalProject()
+      .setButtonName('Bowling Scorecard Parser')
+      .setDisplayName('Bowling Scorecard Parser')
+      .setGithubLink('https://github.com/nathan3882/BowlingCardParse')
+      .setPath('bowlingcardparse')
+      .setTagline('This project will parse a bowling scorecard; for example, "X 7/ 63 9/ X X 81 7/ 72 X8/" OR "X7/639/XX817/72X8/", into it\'s correct numerical score');
 
     this.freelance = new PersonalProject()
       .setButtonName('Freelance')
@@ -85,7 +101,15 @@ export class ProjectsService {
       .setGithubLink('https://github.com/nathan3882/howfast')
       .setTagline('This is a program that allows you to constantly view how fast you\'re going along with sending off conditional notifications to your phone when you reach certan speeds.');
 
-    this.allProjects.push(this.howFast, this.bigBookRevision, this.androidTtrainParse, this.NBIdealTrains, this.spotipoint, this.ttrainparse, this.freelance);
+    this.allProjects.push(this.howFast,
+      this.bigBookRevision,
+      this.androidTtrainParse,
+    this.NBIdealTrains,
+      this.excelReporter,
+      this.bowlingParse,
+      this.spotipoint,
+      this.ttrainparse,
+      this.freelance);
 
   }
 

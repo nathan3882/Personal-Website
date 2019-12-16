@@ -10,7 +10,7 @@ import {LocationService} from "../../services/location/location.service";
 })
 export class HomeButtonComponent implements OnInit {
 
-  constructor(private projectsService: ProjectsService, private locationService: LocationService) {
+  constructor(public projectsService: ProjectsService, public locationService: LocationService) {
   }
 
   ngOnInit() {

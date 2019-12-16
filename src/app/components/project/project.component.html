@@ -7,19 +7,19 @@
   <label class="all-descriptions" [ngSwitch]="this.project.displayName">
 
     <p *ngSwitchCase="projectsService.spotipoint.displayName">A few of Spotipoints best features are:<br><br>
-      The user can replay certain parts of songs; this could be the parts you like the most, or a part someone else in
-      the room hates *evil laugh*<br>As an example, make 1:05 - 2:10 play on repeat a configurable amount of
-      times.<br><br>
-      You can also stop listening skip parts of songs you dont like and dive in, straight to your more favourable
-      part/s<br>All you have to do is save a favourite part (ie 1:10) to skip to when the song starts, or finishes,
-      infact.<br><br>
-      Support will be coming soon for changing the colour of their Philips Hue lights - for example, when the bass
-      drops... the lights change, or flicker, depending on your configuration.
+    The user can replay certain parts of songs; this could be the parts you like the most, or a part someone else in
+    the room hates *evil laugh*<br>As an example, make 1:05 - 2:10 play on repeat a configurable amount of
+    times.<br><br>
+    You can also stop listening skip parts of songs you dont like and dive in, straight to your more favourable
+    part/s<br>All you have to do is save a favourite part (ie 1:10) to skip to when the song starts, or finishes,
+    infact.<br><br>
+    Support will be coming soon for changing the colour of their Philips Hue lights - for example, when the bass
+    drops... the lights change, or flicker, depending on your configuration.
     </p>
 
     <p *ngSwitchCase="projectsService.androidTtrainParse.displayName">Android Timetable Train Parse works in partnership with my thick desktop client named TTrainParse where majority of computation occurs.<br><br>
-      Android TTrainParse offers a more convenient illustration for a student that has previously registered with my<br>
-      <a routerLink="[/project/ttrainparse">TTrainParse Desktop</a> app to allow them to view, without hopping between considerable amounts of internet reliant applications, their lessons + those lessons' associated trains
+    Android TTrainParse offers a more convenient illustration for a student that has previously registered with my<br>
+    <a routerLink="[/project/ttrainparse">TTrainParse Desktop</a> app to allow them to view, without hopping between considerable amounts of internet reliant applications, their lessons + those lessons' associated trains
     </p>
 
     <p *ngSwitchCase="projectsService.NBIdealTrains.displayName">
@@ -54,13 +54,26 @@
       This is all configurable and you can choose to have your speed unit in MPH, KMPH, knots etcetera, it's up to the user.
     </p>
 
+
     <p *ngSwitchCase="projectsService.freelance.displayName">
       All of my freelance projects are currently hidden from view. This is to protect the intellectual property owned by the client I performed the work for.<br><br>
       A considerable amount of clients also require me to sign Non Disclosure Agreements to assure there was no publication of the ideas I was writing etcetera.<br><br>
       This, sadly, leaves no freelance projects being eligible for public display on my website or GitHub; however, they could be available to see the code in person.
     </p>
 
+    <p *ngSwitchCase="projectsService.excelReporter.displayName">
+      This project uses a library called https://community.jaspersoft.com/ and an Excel Reader / Writer to take a CSV document and have all of it's data transferred over to a PDF document to give a more aesthetic print / representation of the data.
+    </p>
+
+    <p *ngSwitchCase="projectsService.bowlingParse.displayName">
+      This was a project for a company I work for, I wrote it in a night during my application process<br><br>
+      It serves a purpose fo recieving a bowling scorecard, ie "X 7/ 63 9/ X X 81 7/ 72 X8/", and parsing it into a correct numerical representation.<br><br>
+      There will be an Angular Application soon that uses the logic I wrote here to allow a user to enter a scorecard with Spring Boot / a similar framework.
+
+    </p>
+
     <!--default case when there are no matches -->
     <p *ngSwitchDefault>A random error occured that meant we could't describe this project to you... :(</p>
   </label></div>
+
 <app-home-button></app-home-button>

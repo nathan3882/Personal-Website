@@ -23,7 +23,7 @@ export class HomePageComponent implements OnInit {
     }
   }
 
-  private didComeFromSomewhereElse() {
+  public didComeFromSomewhereElse() {
     return this.locationService.fromProject() !== '';
   }
 

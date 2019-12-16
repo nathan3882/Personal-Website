@@ -9,7 +9,7 @@ import {ProjectsService} from '../../../services/projects/projects.service';
 @Injectable()
 export class ProjectButtonsComponent implements OnInit {
 
-  constructor(private projectService: ProjectsService) {
+  constructor(public projectService: ProjectsService) {
 
   }
 

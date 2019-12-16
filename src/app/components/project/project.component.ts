@@ -12,9 +12,9 @@ import {ActivatedRoute} from '@angular/router';
 @Injectable()
 export class ProjectComponent implements OnInit {
 
-  project: PersonalProject;
+  public project: PersonalProject;
 
-  constructor(private activatedRoute: ActivatedRoute, private locationService: LocationService, private projectsService: ProjectsService) {
+  constructor(public activatedRoute: ActivatedRoute, public locationService: LocationService, public projectsService: ProjectsService) {
 
   }
 
